@@ -11,31 +11,14 @@
 /* ---------- VARIABLES @Max ---------- */
 /* Default Theme */
 html {
-  --bg2: #1E5631;
-  --hover: #4C9A2A;
-  --;
-  --navfont: #fff;
-  --hfont: #000;
-  --h1f: #373fff;
-  --contentcolor: #ACDF87;
-  --bgimage: url(https://cdn.glitch.com/d388b4da-212a-44a6-81b3-7c03a2fd801e%2Fbackground.jpg?v=1587422613213);
-  --afont: #fff;
-  --aback: #ACE01B;
-  transition: all 0.1s;
-}
-
-/* Dark Theme */
-html [data-theme="dark"] {
-  --bg2: #262626;
-  --hover: #454545;
-  --navfont: #fff;
-  --hfont: #fff;
-  --h1f: #fff;
-  --nborder: #333;
-  --contentcolor: #222;
-  --bgimage: url(https://cdn.glitch.com/d388b4da-212a-44a6-81b3-7c03a2fd801e%2Fdarkwall.png?v=1587607264495);
-  --afont: #000;
-  --aback: #ACE01B;
+  bg: #1E5631;
+  hover: #4C9A2A;
+  navfont: #fff;
+  hfont: #000;
+  h1f: #373fff;
+  contentcolor: #ACDF87;
+  afont: #fff;
+  aback: #ACE01B;
   transition: all 0.1s;
 }
 
@@ -44,28 +27,17 @@ html [data-theme="dark"] {
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background-image: var(--bgimage); /* Struggled with image for backgound but found solution was the Glitch link*/
-  background-repeat: repeat;
-
-  /* @Dinodh Background Image Repeat Source Code: https://www.w3schools.com/css/css_background_repeat.asp
-  Image source: https://previews.123rf.com/images/eigens/eigens1909/eigens190905649/129963400-seamless-repeating-pattern-with-moderate-green-beige-and-dark-green-colors-can-be-used-for-wallpaper.jpg
-  */
-  transition: all 0.1s;
-}
 
 #container {
   /* padding left and right */
-  padding-left: 20px;
-  padding-right:
-   20px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 
-/* -------------------------- TITLE ------------------- (Scott)*/
+/* -------------------------- TITLE ------------------- */
 header {
   padding:20px;
-  background-color: var(--contentcolor);
-  color: var(--hfont);
   border-radius: 10px;
 }
 
@@ -73,17 +45,9 @@ header h1 {
   font-weight:bold;
   text-shadow: 2px 2px #fff;
 }
-#icon img {
-  /* @Scott */
-  float: left;
-  padding: 20px, 20px, 20px, 20px;
-  width: 50px;
-  height: auto;
-}
 
 h1 {
   font-style: italic;
-  color: var(--h1f); /* see the top of this stylesheet to see variables*/
   transition: all 0.1s;
 }
 
@@ -194,13 +158,6 @@ div.gshadow {
   -moz-box-shadow:    3px 3px 10px 5px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
   box-shadow:         3px 3px 10px 5px rgba(0, 0, 0, 0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-/* -------------------------- id = food-page ------------------- */
-#food-img {
-  float: right;
-  overflow:hidden;
-}
-
-/* -------------------------- id = CONTACT US ------------------- */
 
 /* -------------------------- FOOTER ------------------- */
 
@@ -223,33 +180,4 @@ div.gshadow {
 .responsive {
   width: 100%;
   height: auto;
-}
-
-/* -------------------------- DARK SWITCH @Max------------------- */
-.ModeSwitch {
-  position: sticky;
-  float: right;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-  right: 10px;
-  z-index:
-   9999;
-}
-
-.nborder {
-  border-color: var(--nborder);
-}
-
-.bgl {
-  background-color: transparent !important;
-  color: var(--navfont);
-}
-
-.clearfix {
-  overflow: auto;
-}
-
-/*---------------------STAR RATING @Connor------------------*/
-.checked {
-  color: orange;
 }
